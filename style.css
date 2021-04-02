@@ -10,13 +10,21 @@
 
   html{
   	scroll-behavior: smooth;
+    overflow-x: hidden !important;
+
   }
+
+  
 
 body{
 	position: relative;
     overflow-y: auto;
     background-color: #dbe7ea !important;
     font-family: 'PT Sans', sans-serif;
+    width: 100%;
+     overflow-x: hidden !important;
+   
+
 }
 
 /* Scroll bottome to top ------------------------------*/
@@ -148,6 +156,13 @@ header .wrapper h2 a{
     font-size: 26px;
     color: #434a54;
     text-decoration: none;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+header .wrapper h2 a:hover{    
+  transition: 0.4s;
+  color:#0f4754;
 }
 
 header .wrapper .menu{    
@@ -606,13 +621,19 @@ width: 70%;
   transition: 0.4s;
   overflow: hidden;
   border-radius: 5px;
-
+ cursor: pointer;
 }
 
 .project .wrapper .img-div:hover .icon {
   opacity: 0;
   pointer-events: none;
   transition: 0.4s;
+
+}
+.project .wrapper .img-div:hover .col-one-icon {
+  opacity:1 !important ;
+  pointer-events:auto !important;
+ 
 
 }
 .project .wrapper .img-div .icon {
@@ -630,7 +651,7 @@ width: 70%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.4s;
-  opacity: ;
+  opacity: 1;
 
 }
 .project .wrapper .img-div .icon  i{
@@ -674,12 +695,41 @@ border-radius: 5px;
     text-align: center
 
 }
+
+.project .wrapper .img-div .first-pname{
+  
+    opacity: 1 !important ;
+    
+
+}
+a.first-name-a1 {
+    padding-bottom: 0px !important;
+}
+ p.icon.col-one-icon {
+    top: initial !important;
+    bottom: 0 !important ;
+} 
+
+
+a.first-name-a2 {
+    padding-top: 0px!important;
+}
 .project .wrapper .img-div .project-name a{
 	display: inline-block;
 	text-decoration: none;
 	color: white;
 	font-size: 30px;
 	font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+.project .wrapper .img-div .project-name {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
   text-align: center;
   padding-bottom: 20px;
 
@@ -701,10 +751,17 @@ opacity: 1;
 
 }
 
-.project .wrapper .col-two .project-name a,
-.project .wrapper .col-three .project-name a,
-.project .wrapper .col-four .project-name a{
+.project .wrapper .col-two .project-name ,
+.project .wrapper .col-three .project-name ,
+.project .wrapper .col-four .project-name {
   color: rgba(255, 255, 255, 0.5) !important ;
+  font-size: 21px;
+}
+
+.project .wrapper .col-two .project-name span ,
+.project .wrapper .col-three .project-name span ,
+.project .wrapper .col-four .project-name span {
+  display: inline-block !important ;
 }
 
 
@@ -1064,8 +1121,18 @@ header .wrapper {
 
 
 @media 	(max-width: 767px) {
+
+
+
+  p.icon.col-one-icon {
+   bottom:0 !important;
+   
+}
+a.first-name-a1 {
+    font-size: 50px !important;
+}
 	
-.project .col-md-6  {
+.project .col-one, .project .col-three   {
     padding-bottom: 30px;
 }
 
@@ -1077,6 +1144,15 @@ header .wrapper {
 .education .warapper .col-md-3.box-left p {
     margin: 0;
 }
+
+.contact .wrapper .row .left-side input {
+    width: 100% !important;
+}
+.contact .wrapper .row .left-side textarea {
+    width: 100% !important;
+}
+
+
 
 }
 
@@ -1123,6 +1199,20 @@ header .wrapper {
   padding-top: 22px;
  }
 
+
+ a.first-name-a1 {
+    font-size: 24px !important;
+}
+
+a.first-name-a2 {
+    font-size: 18px !important;
+}
+
+p.icon.col-one-icon {
+    bottom: 0 !important;
+    width: 32px !important ;
+    height:32px !important ;
+}
 
 }
 

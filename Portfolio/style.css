@@ -22,7 +22,7 @@ header{
 	height: 100vh;
 	background: url('images/man.png') no-repeat ;
 	background-size: cover;
-	background-position: right;
+	background-position: bottom;
 	z-index: 1;
 
 }
@@ -151,25 +151,29 @@ animation-delay: 1.5s;
    .head-sec .text p{
   	font-size: 24px;
   	letter-spacing: 1px;
-  	margin-bottom: 20px;
+  	margin-bottom: 10px;
   	font-weight: 100;
-    white-space: nowrap;
+  
   }
 
    .typea{
     color: crimson;
     transition: all  0.5s linear;
     position: relative;
-    white-space: nowrap;
+    font-size: 26px;
 
   }
+  span.typed-cursor {
+    font-size: 30px;
+    color: crimson;
+}
 
   .typeb{
     color: crimson;
     transition: all  0.5s linear;
     position: relative;
-    white-space: nowrap;
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: 500;
 
   }
 
@@ -224,6 +228,7 @@ animation-delay: 1.5s;
   	border-radius: 5px;
   	border: 2px solid crimson;
   	transition: all 0.3s linear;
+    margin-top: 25px;
  
   } 
 
@@ -396,10 +401,11 @@ animation-delay: 1.5s;
 	padding: 20px;
 	background-color:#212121;
 	transition: all 0.2s linear;
+  text-align: center;
 }
 
 
-.service .row .card .box a{
+.service .row .card .box i{
 	text-align: center;
 	font-size: 30px;
 	display: block;
@@ -429,12 +435,14 @@ animation-delay: 1.5s;
 
 }
 
-.service .row .card:hover .box a ,.service .row .card:hover .box h2,
+.service .row .card:hover .box i ,.service .row .card:hover .box h2,
 .service .row .card:hover .box p{
 
 	color:white;
 	
 }
+
+
 
 /* skills section styling ----------------------------------------------------*/
 
@@ -469,7 +477,7 @@ animation-delay: 1.5s;
 
 }
 
-.skills .row .left .content a {
+.skills .row .left .content button {
     text-decoration: none;
     padding: 6px 16px;
     background: crimson;
@@ -477,10 +485,16 @@ animation-delay: 1.5s;
     border-radius: 5px;
     display:inline-block;
     color: white;
+    font-size: 14px;
+    font-weight: 600;
     transition: all 0.3s linear;
 }
+.skills .row .left .content button:focus {
+   
+    outline: none;
+}
 
-.skills .row .left .content a:hover{
+.skills .row .left .content button:hover{
 	background-color: transparent;
 	color: crimson;
 	transition: all 0.3s linear;
@@ -845,7 +859,7 @@ footer h4 span{
   .baricon{
  	position: absolute;
  	background-color: white;
- 	width: 30px;
+ 	width: 24px;
  	height: 2px;
  	z-index: 2;
  	display: none;
@@ -893,21 +907,21 @@ footer h4 span{
 
 @media  (max-width: 991px){
    .navbar-menu .menu {
-      left: -100%;
      transition: all 0.3s linear;
 	display:flex;
 	flex-direction: column;
     position: absolute;
     top: 100%;
+    right: -100%;
     justify-content: flex-start;
-    left:-100%;
-    transform: translateX(-50%);
-    background:#190b0b;
-    width: 100%;
+    background:white;
+    width: 40%;
     height: auto;
     transition: all 0.5s linear;
     cursor: pointer;
     transition: all 0.3s linear;
+    clip-path: polygon(30% 0, 69% 0, 100% 0, 100% 70%, 100% 100%, 16% 100%, 0 78%, 0 0);
+
 
 
 }
@@ -918,7 +932,6 @@ footer h4 span{
 	transition: all 0.3s linear;
 	width: 100%;
 	text-align: center;
-	  border-bottom: 1px solid white;
 }
 .navbar-menu .menu li:first-child a
 {
@@ -931,7 +944,7 @@ footer h4 span{
    border: none !important;
 }
 .check:checked ~ .menu {
-    left:50%;
+    right: 0;
     transition: all 0.3s linear;
     
 
@@ -966,6 +979,54 @@ footer h4 span{
 
 
  /* responsive media query */
+
+@media (max-width: 480px) {
+  .typea {
+    
+    white-space: normal !important;
+    font-size: 20px !important  ;
+
+}
+.head-sec .text p{
+  margin-bottom: 0 !important ;
+}
+.typeb {
+    
+    white-space: normal !important;
+    font-size: 20px !important  ;
+
+}
+span.typed-cursor{
+  font-size: 20px !important;
+}
+
+}
+
+
+@media  (max-width: 991px) {
+  
+  .head-sec .text h3 {
+    font-size: 20px !important ;
+}
+.head-sec .text h1 {
+    font-size: 36px !important ;
+}
+.head-sec .text p {
+    font-size: 20px !important ;
+}
+.head-sec .text a {
+    font-size: 13px !important ;
+    padding: 10px 20px !important;
+    font-size: 16px !important ;
+}
+
+
+
+
+}
+
+
+
 
 @media (max-width: 320px) {
 
