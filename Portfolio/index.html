@@ -149,8 +149,10 @@ jQuery(document).ready(function($){
 			<div class="text animate__animated animate__fadeIn">
 		    <h3>Hello, my name is</h3>
 			<h1 class="animate__animated animate__bounceIn">Ashok Malviya</h1>
-			<p>And i'm a <span class="typea"></span></p>
-			<a href="" class="hire-me">Hire me</a>
+			<p>And i'm a
+       <div><span class="typea"></span> </div>
+      </p>
+			<a href="#contact" class="hire-me">Hire me</a>
 			</div>
 			
 		</div>
@@ -174,7 +176,9 @@ jQuery(document).ready(function($){
 		<div class="coloum right">
 		
          <div class="content">
-         	<h2>i'm ashok and i'm a <span class="typeb"></span></h2>
+         	<h2>i'm ashok and i'm a <div class="type js">
+            <span class="typeb"></span>
+          </div></h2>
          	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ratione impedit recusandae autem delectus blanditiis repudiandae nam. Maxime, soluta, natus! Saepe, excepturi enim eos officia laborum autem reiciendis adipisci illum, quia! Voluptatum qui praesentium velit officiis iure facilis sed similique aliquam distinctio cumque sapiente odit rem amet tempora numquam, odio.</p>
          	<a href="Resume.pdf" class="btn_cv" target="_blank">Download CV</a>
          </div>
@@ -194,7 +198,7 @@ jQuery(document).ready(function($){
      <div class="row">
      	<div class="card">
      		<div class="box">
-     			<a href=""><i class="fa fa-paint-brush " ></i></a>
+   <i class="fa fa-paint-brush" id="fa-paint-brush"></i>
      			<h2 class="head-text">Web Design</h2>
      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Animi quos magnam ex itaque quaerat molestias rem Suscipit minus ex repellat.</p>
      		</div>
@@ -202,7 +206,7 @@ jQuery(document).ready(function($){
 
      	    	<div class="card">
      		<div class="box">
-     			<a href=""><i class="fa fa-line-chart" aria-hidden="true"></i></a>
+     			<i class="fa fa-line-chart" aria-hidden="true" id="fa-line-chart"></i>
      			<h2 class="head-text">Advertising</h2>
      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Animi quos magnam ex itaque quaerat molestias rem Suscipit minus ex repellat. </p>
      		</div>
@@ -210,7 +214,7 @@ jQuery(document).ready(function($){
 
      	    	<div class="card">
      		<div class="box">
-     			<a href=""><i class="fa fa-code" aria-hidden="true"></i></a>
+ <i class="fa fa-code" aria-hidden="true" id="fa-code"></i>
      			<h2 class="head-text">Apps Desing</h2>
      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Animi quos magnam ex itaque quaerat molestias rem Suscipit minus ex repellat. </p>
      		</div>
@@ -232,7 +236,7 @@ jQuery(document).ready(function($){
 	<div class="content">
 		<h2>My creativce skills & experience</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Facere illum enim esse eius delectus vel itaque, sint, nulla ex aperiam. Quod sunt, neque. Saepe similique, minima, fugiat nobis non repellat culpa ex corrupti aut. Perspiciatis nesciunt, deserunt minima aspernatur unde cupiditate tempore necessitatibus autem tenetur ipsa alias atque velit eos.</p>
-		<a href="">Read more</a>
+		<button>Read more</button>
 	</div>
 		</div>
 
@@ -430,51 +434,7 @@ jQuery(document).ready(function($){
 </section> 
 
 
-<!-- 
-<section class="team" id="team">
-
-	<div class="wrapper">
-		<div class="title">
-			<h1 class="">My teams</h1>
-		</div>
-		      <div class="row">
-
-				<div class="card">
-				<div class="box">
-					<figure>
-						<img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
-					</figure>
-					<h2>someone name</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vel?</p>
-				</div>
-			</div>
-
-				<div class="card">
-				<div class="box">
-					<figure>
-						<img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
-					</figure>
-					<h2>someone name</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vel?</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="box">
-					<figure>
-						<img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
-					</figure>
-					<h2>someone name</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vel?</p>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section> -->
-
-
-<!-- contact section start ------------------------------------------->
+<!-- contact section start ------------------------------->
 
 <section class="contact" id="contact">
 	<div class="wrapper">
@@ -488,7 +448,8 @@ jQuery(document).ready(function($){
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Harum repellendus suscipit labore quisquam dolore, ipsam.</p>
 
 					<div class="info">
-				<a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+				<a href="#fa-user"><i class="fa fa-user" aria-hidden="true"
+          id="fa-user"></i></a>
 				 <div class="contact_name">
 		           			<p>Name</p>
 						    <p>Ashok malviya</p>
@@ -496,7 +457,7 @@ jQuery(document).ready(function($){
 					</div>
 
 					<div class="info">
-		  <a href="" class="contant_icon"><i class="fa fa-map-marker" ></i></a>
+		  <a href="#fa-map-marker" class="contant_icon"><i class="fa fa-map-marker" id="fa-map-marker" ></i></a>
 		           <div class="contact_name">
 		           		<p>address</p>
 						<p>Rajasthan india</p>
@@ -504,7 +465,7 @@ jQuery(document).ready(function($){
 					</div>
 
 					<div class="info">
-				<a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+				<a href="#fa-envelope"><i class="fa fa-envelope" id="fa-envelope"></i></a>
 				<div class="contact_name email">
 		           		<p>Email</p>
 						<p><a href="mailto:ashokmalviya77717@gmail.com">
@@ -522,8 +483,8 @@ jQuery(document).ready(function($){
 			<input type="email" name="" placeholder="Email">
 		</div>
 		<input type="text" name="" placeholder="Subject.">
-		<textarea name="" placeholder="Message"></textarea>
-				<a href="">Send Message</a>	
+		<textarea name="subject" placeholder="Message"></textarea>
+				<a href="#">Send Message</a>	
 				
 			</div>
 		</div>
