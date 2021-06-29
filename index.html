@@ -39,6 +39,27 @@ jQuery(document).ready(function($){
             $("body,html").animate({ scrollTop: 0 } );
             return false;
         });
+
+
+	// sticy navbar --------------------------------
+
+		$(window) .scroll(function(){
+	if ( $ (window) .scrollTop () >= 50 ) {
+		$(".nav-resume") .css("background-color", "rgb(219, 231, 234)")
+		 .css("z-index", "999");
+		//  $(".navbar-menu .logo a span") .css("color", "white");
+		//   $(".navbar-menu .menu li a:hover") .css("color", "white");
+		//   $('.navbar-menu .menu li a') .mouseover(function() {
+  //   $(this) .css("color", "white")
+  // });
+
+	} else {
+		$("..nav-resume") .css("background-color", "transparent");
+
+		
+
+	}
+});
     });
 	
 </script> 
@@ -47,8 +68,8 @@ jQuery(document).ready(function($){
 
 
 <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-<header>
-	<div class="wrapper">
+<header class="nav-resume">
+	<div class="wrapper ">
 		<input type="checkbox" class="check" id="bars">
 		<label for="bars" class="bar">
 			<span class="bar-icon">	</span>
@@ -141,7 +162,7 @@ jQuery(document).ready(function($){
            	<div class="proggrss">
            		<div class="pro-text">
            			<p>JAVASCRIPT</p>
-           			<p>70%</p>
+           			<p>60%</p>
            		</div>
            		<div class="bar"></div>
            	</div>
@@ -158,7 +179,7 @@ jQuery(document).ready(function($){
            <div class="col-sm-5   right-bar">
     <div class="proggrss">
            		<div class="pro-text">
-           			<p>BOOSTRAP-4</p>
+           			<p>BOOSTRAP-5</p>
            			<p>80%</p>
            		</div>
            		<div class="bar"></div>
@@ -166,7 +187,7 @@ jQuery(document).ready(function($){
            	<div class="proggrss">
            		<div class="pro-text">
            			<p>ADOBE PHOTOSHOP</p>
-           			<p>80%</p>
+           			<p>70%</p>
            		</div>
            		<div class="bar"></div>
            	</div>
@@ -182,7 +203,7 @@ jQuery(document).ready(function($){
            	<div class="proggrss">
            		<div class="pro-text">
            			<p>MS-OFFICE</p>
-           			<p>70%</p>
+           			<p>80%</p>
            		</div>
            		<div class="bar"></div>
            	</div>
@@ -204,7 +225,7 @@ jQuery(document).ready(function($){
 			<div class="col-md-9 box-right">
 				<p>Diploma in Web-designing</p>
 				<p>Top Technology institute of Ahmedabad</p>
-				<p>I complete web desingning in tops technology institute. I have taken full knowledge of web design and UI desing and i have taken some knowledge of photoshop and illutrator to need in web-design And I have also done many projects related to web designing.</p>
+				<p>I have completed Diploma in Web Designing from Tops Technology Institute. I have acquired full knowledge of ui design and web design and I have also taken knowledge of photoshop and illustrator which is needed in web design And I have completed many projects related to web designing</p>
 			</div>
 		</div>
 		<div class="row">
@@ -215,7 +236,7 @@ jQuery(document).ready(function($){
 			<div class="col-md-9 box-right">
 				<p>certificate of information technology</p>
 				<p>IGNOU , Kota</p>
-				<p>I complete basic to advance computer knowledge on this course. i have taken knowled of ms-office and i learn data entry , make jobsheet spreadsheet, presentation and many more and i increase hindi and english typing speed</p>
+				<p>I have completed basic to advance computer knowledge on this course. i have taken knowledge of ms-office and i have learned data entry i have maked jobsheet, spreadsheet, presentation and many more and i increased hindi and english typing speed in this course</p>
 			</div>
 		</div>
 
@@ -227,7 +248,7 @@ jQuery(document).ready(function($){
 			<div class="col-md-9 box-right">
 				<p>Bachelor of arts</p>
 				<p>Jay narayan vyas university, jodhpur</p>
-				<p>I complete my graduation in arts stream in jay narayan vyas university jodhpur. i have taken knowledge of this graduation is political, economic, social science and english literature</p>
+				<p>I have completed my graduation in arts stream in jay narayan vyas university jodhpur. i have taken knowledge of this graduation is political, economic, social science and english literature</p>
 			</div>
 		</div>
 	</div>
@@ -253,12 +274,14 @@ jQuery(document).ready(function($){
 			</div>
 		</div>
 
+
 		<div class="col-md-6 col-two">
 			<div class="img-div">
-				<p class="icon"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+				<p class="icon col-one-icon"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
 					</p>
-			<p class="project-name ">Personal Website
-				<span >Web development</span>
+			<p class="project-name first-pname">
+				<a href="Travel-site/index.html" target="_blank" class="first-name-a1">Travel Website</a>
+				<span ><a href="Travel-site/index.html" class="first-name-a2 first-pname" target="_blank">Web development </a></span>
 			</p>
 				<img src="image/project-img-2.jpg" alt="">
 			</div>
@@ -270,7 +293,7 @@ jQuery(document).ready(function($){
 			<div class="img-div">
 				<p class="icon"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
 					</p>
-			<p class="project-name">Travel Website
+			<p class="project-name">Personal website
 				<span>Web development</span>
 			</p>
 				<img src="image/project-img-3.jpg" alt="">
