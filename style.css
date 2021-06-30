@@ -1194,6 +1194,12 @@ a.first-name-a1 {
     width: 160px !important;
   }
 
+  .project .wrapper .col-two .project-name ,
+.project .wrapper .col-three .project-name ,
+.project .wrapper .col-four .project-name {
+  font-size: 18px;
+}
+
 }
 
 
