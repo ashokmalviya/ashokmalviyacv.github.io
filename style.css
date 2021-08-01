@@ -475,7 +475,7 @@ width: 70%;
 }
 
 .skills .left-bar .proggrss:nth-of-type(4) .bar::before{
-width: 70%;
+width: 60%;
 }
 
 .skills .right-bar .proggrss:nth-of-type(1) .bar::before{
@@ -491,7 +491,7 @@ width: 70%;
 }
 
 .skills .right-bar .proggrss:nth-of-type(4) .bar::before{
-width: 80%;
+width: 70%;
 }
 
 
@@ -1193,12 +1193,6 @@ a.first-name-a1 {
  {
     width: 160px !important;
   }
-
-  .project .wrapper .col-two .project-name ,
-.project .wrapper .col-three .project-name ,
-.project .wrapper .col-four .project-name {
-  font-size: 18px;
-}
 
 }
 
