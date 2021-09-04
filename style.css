@@ -74,7 +74,22 @@ header .wrapper {
 header .wrapper h2{    
 
     flex-grow: 3;
- 
+}
+header .wrapper h2 > a{    
+    font-size: 16px;
+    color: blakc;
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 header .wrapper .bar{    
@@ -158,13 +173,7 @@ header .wrapper .bar-icon::after{
  
 }
 
-header .wrapper h2 a{    
-    font-size: 26px;
-    color: #434a54;
-    text-decoration: none;
-    transition: 0.4s;
-    font-weight: 600;
-}
+
 
 header .wrapper h2 a:hover{    
   transition: 0.4s;
@@ -185,6 +194,7 @@ header .wrapper .menu li a{
 	color: #434a54;
 	padding-left: 10px;
 	transition: 0.4s;
+    font-size: 18px;
 }
 header .wrapper .menu li a:hover{    
 	transition: 0.4s;
@@ -471,7 +481,7 @@ width: 90%;
 }
 
 .skills .left-bar .proggrss:nth-of-type(3) .bar::before{
-width: 70%;
+width: 80%;
 }
 
 .skills .left-bar .proggrss:nth-of-type(4) .bar::before{
@@ -610,172 +620,113 @@ width: 70%;
 	font-size: 36px;
     color:  #434a54;
 }
-
-.project .wrapper .row {
-	margin-bottom: 30px;
+.project .row-one{
+    padding-bottom: 10px;
 }
 
-
-.project .wrapper .img-div img{
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 5px;
+.project .coloum{
+    position: relative;
 }
-
-.project .wrapper .img-div {
-  width: 100%;
-  height: auto;
-  position:relative;
-  transition: 0.4s;
-  overflow: hidden;
-  border-radius: 5px;
- cursor: pointer;
+.project .coloum{
+    position: relative;
 }
-
-.project .wrapper .img-div:hover .icon {
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s;
-
-}
-.project .wrapper .img-div:hover .col-one-icon {
-  opacity:1 !important ;
-  pointer-events:auto !important;
- 
-
-}
-.project .wrapper .img-div .icon {
-  font-family: FontAwesome !important;
-  position: absolute;
-  font-size: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.4s;
-  opacity: 1;
-
-}
-.project .wrapper .img-div .icon  i{
-  font-family: FontAwesome !important;
-  position: absolute;
-  font-size: 20px;
-  color: #0f4754;
-
-}
-.project .wrapper .img-div  .project-name span a{
-  display: block;
-  font-size: 20px;
-  color:white;
+.project .img-box{
+    position:relative;
 
 }
 
-
-.project .wrapper .img-div::before {
-border-radius: 5px;
-  width:90%;
-  height:90%;
-  content: '';
-  position: absolute;
-  left: 5%;
-  top:6%;
-  background-color: rgba(0, 0, 0, 0.4);
-  transform-origin: top left;
-  transform: scale(0,0);
-  transition: 0.4s;
-  
+.project .img-box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.project .wrapper .img-div .project-name{
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.4s;
-    opacity: 0;
-    pointer-events: none;
-    text-align: center
+
+.project .img-box figure img{
+width: 100%;
+height: auto;
+object-fit: cover;
+display:inline-block;
+}
+.project .img-box .content{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+.project  .img-box .content a.link-name {
+    color: white;
+    text-transform:uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
 
-.project .wrapper .img-div .first-pname{
-  
-    opacity: 1 !important ;
-    
+.project  .img-box .content a.second-name{
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 30px;
 
 }
-a.first-name-a1 {
-    padding-bottom: 0px !important;
+.project  .img-box .content span {
+    width:100%;
+    height: 5px;
+    font-size: 16px;
+    background-color:#dbe7ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s linear;
+    margin-top: 8px;
+
 }
- p.icon.col-one-icon {
-    top: initial !important;
-    bottom: 0 !important ;
+.project  .img-box .content span::before {
+    content: '';
+    width:0;
+    height:100%;
+    font-size: 16px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:0;
+    transform-origin:center;
+    transition: 0.3s linear;
+
+}
+.project  .img-box:hover span::before{
+    width: 100%;
+     transition: 0.3s linear;
 } 
 
-
-a.first-name-a2 {
-    padding-top: 0px!important;
-}
-.project .wrapper .img-div .project-name a{
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	font-size: 32px;
-	font-weight: 600;
-  text-align: center;
-  padding-bottom: 20px;
-
-}
-.project .wrapper .img-div .project-name {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 20px;
-
+.project .col-four .img-box .content a.link-name {
+    color: #8d96a2;
 }
 
-.project .wrapper .img-div:hover::before {
-
-transform: scale(1, 1);
-  transition: 0.4s;
-  transition-delay: 0.2s;
-
-}
-
-.project .wrapper .img-div:hover .project-name {
-opacity: 1;
-    pointer-events: auto;
-  transition: 0.4s;
-   transition-delay: 0.2s;
-
-}
-
-.project .wrapper .col-two .project-name ,
-.project .wrapper .col-three .project-name ,
-.project .wrapper .col-four .project-name {
-  color: rgba(255, 255, 255, 0.5) !important ;
-  font-size: 25px;
-}
-
-.project .wrapper .col-two .project-name span ,
-.project .wrapper .col-three .project-name span ,
-.project .wrapper .col-four .project-name span {
-  display: inline-block !important ;
+.project  .col-four .img-box .content span::before {
+    background-color: #8d96a2;
 }
 
 
 
+
+
+/* project page end ----------------*/
 
 
 /* contact page stylilng ------------------------------	 */
@@ -1135,17 +1086,7 @@ header .wrapper {
 
 
 
-  p.icon.col-one-icon {
-   bottom:0 !important;
-   
-}
-a.first-name-a1 {
-    font-size: 35px !important;
-}
-	
-.project .col-one, .project .col-three   {
-    padding-bottom: 30px;
-}
+
 
 .education .warapper .col-md-3.box-left {
     padding: 30px 0;
@@ -1211,19 +1152,6 @@ a.first-name-a1 {
  }
 
 
- a.first-name-a1 {
-    font-size: 24px !important;
-}
-
-a.first-name-a2 {
-    font-size: 18px !important;
-}
-
-p.icon.col-one-icon {
-    bottom: 0 !important;
-    width: 32px !important ;
-    height:32px !important ;
-}
 
 }
 

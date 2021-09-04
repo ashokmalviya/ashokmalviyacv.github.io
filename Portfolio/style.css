@@ -6,14 +6,10 @@
 	box-sizing: border-box;
 	font-family: 'Ubuntu', sans-serif;
 }
-html{
+body, html{
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
-}
-
-
-body{
-	position: relative;
+  overflow-x: hidden !important ;
 }
 
 header{
@@ -139,13 +135,14 @@ animation-delay: 1.5s;
   	font-size: 18px;
   	letter-spacing: 1px;
   	font-weight: 100;
+    margin-bottom: 20px;
  
   }
 
    .head-sec .text h1{
   	font-size: 50px;
   	letter-spacing: 1px;
-  	margin-bottom: 4px;
+  	margin-bottom: 15px;
   }
 
    .head-sec .text p{
@@ -242,13 +239,13 @@ animation-delay: 1.5s;
   /* same styling -------------------------------------------*/
   
   .about, .service ,.skills , .team ,.contact{
-  	padding: 75px 50px 75px 50px;
+  	padding: 75px 50px 110px 50px;
   }
  .service , .skills  {
-   padding-bottom: 175px!important;
+   padding-bottom:110px;
   }
   .team {
-   padding-bottom: 127px!important;
+   padding-bottom: 110px!important;
   }
 
   /* about  section styling ------------------------------*/
@@ -315,8 +312,6 @@ animation-delay: 1.5s;
 
 .about .row .left figure{
 	width:100%;
-	height: 320px;
-
 }
 
 .about .row .left figure img{
@@ -339,10 +334,16 @@ animation-delay: 1.5s;
 	
 }
 
-.about .row .right .content p {
+.about .row .right .content h2 + p {
     text-align: justify;
-    line-height: 1.4;
-    margin-bottom: 30px;
+    line-height:35px;
+    margin-bottom:20px;
+    margin-top: 40px;
+}
+.about .row .right .content  p.text{
+    text-align: justify;
+    line-height:35px;
+    margin-bottom:30px;
 }
 
 .about .row .right .content a.btn_cv {
@@ -398,7 +399,7 @@ animation-delay: 1.5s;
 }
 
 .service .row .card .box{
-	padding: 20px;
+	padding:40px;
 	background-color:#212121;
 	transition: all 0.2s linear;
   text-align: center;
@@ -410,20 +411,20 @@ animation-delay: 1.5s;
 	font-size: 30px;
 	display: block;
 	color: crimson;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 
 .service .row .card .box h2{
 	text-align: center;
-	font-size: 24px;
-	margin-bottom: 5px;
+	font-size: 26px;
+	margin-bottom:30px;
 	
 }
 
 .service .row .card .box p{
 	text-align:center;
-	font-size: 14px;
-	line-height: 1.5;
+	font-size: 16px;
+    line-height: 30px
 	
 }
 
@@ -467,11 +468,12 @@ animation-delay: 1.5s;
 }
 
 .skills .row .left .content h2{
-       margin-bottom: 10px;
+       margin-bottom: 30px;
+       font-size: 30px;
 }
 
 .skills .row .left .content p{
-       text-align: justify;
+       line-height: 30px;
        margin-bottom: 20px;
        font-weight: 100;
 
@@ -511,6 +513,7 @@ animation-delay: 1.5s;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
+    margin-bottom: 20px;
 }
 
 .skills .row .right .skill_bar .bar span{
@@ -580,7 +583,7 @@ animation-delay: 1.5s;
      background-color: white;
 }
 
-.owl-carousel .item{
+.team  .owl-carousel .item{
 	background:black;
 	box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
 	height: auto;
@@ -588,11 +591,11 @@ animation-delay: 1.5s;
 	margin: 10px;
 }
 
-.owl-carousel.owl-loaded 
+.team  .owl-carousel.owl-loaded 
 	{
 		z-index: 0;
 	}
-.owl-dot:focus {
+.team  .owl-dot:focus {
 	outline: none !important;
 	border: none !important;
 }
@@ -602,29 +605,36 @@ animation-delay: 1.5s;
 	background: none !important;
 }
 
-.team-box {
+.team  .team-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
+	padding: 40px;
 
 }
 
-.team-box figure{
-	width: 100px;
-	height: 100px;
+.team  .team-box figure{
+    width: 80px;
+    height: 80px;
 	border-radius: 50%;
 	border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
 }
-.team-box figure img{
+.team  .team-box figure img{
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
 	object-fit: cover;
 }
 
-.team-content p , .team-content h3 {
-	text-align: center;
+
+.team .team-content p {
+    text-align: center;
+    line-height: 30px;
+}
+.team .team-content h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .owl-nav{
@@ -685,17 +695,19 @@ button.owl-next   {
 }
 
 .contact .wrapper .row .left .content h3{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+    font-size: 24px;
 }
 
 .contact .wrapper .row .left .content > p{
 	margin-bottom:10px;
-	line-height: 1.5;
+    line-height: 30px;
 }
 
 .contact .wrapper .row .left .content .info{
 	display: flex;
 	align-items: center;
+    margin:15px 0;
 
 
 }
@@ -742,7 +754,8 @@ button.owl-next   {
 }
 
 .contact .wrapper .row .right h2{
-	margin-bottom: 10px;
+	margin-bottom:30px;
+    font-size: 24px;
 }
 
 .contact .wrapper .row .right .input_group{
@@ -764,7 +777,11 @@ button.owl-next   {
 	margin-right: 10px;
 	height: 35px;
 	padding-left: 5px;
+    margin-bottom: 30px;
 
+}
+.contact .wrapper .row .right .input_group input[type="email"]{
+    margin-left: 30px;
 }
 
 .contact .wrapper .row .right .input_group input:nth-child(2){
@@ -774,7 +791,7 @@ button.owl-next   {
 .contact .wrapper .row .right input , textarea{
 	width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     height: 35px;
     padding-left: 5px;
 }
@@ -804,7 +821,7 @@ button.owl-next   {
 
 footer{
 	width: 100%;
-	height: 40px;
+	height:80px;
 	background: black;
 	display: flex !important;
 	align-items: center;
@@ -920,19 +937,18 @@ footer h4 span{
     transition: all 0.5s linear;
     cursor: pointer;
     transition: all 0.3s linear;
-    clip-path: polygon(30% 0, 69% 0, 100% 0, 100% 70%, 100% 100%, 16% 100%, 0 78%, 0 0);
-
-
-
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+    
 }
 
 .navbar-menu .menu li a{
-	padding: 20px 0 20px 0;
 	color:crimson !important;
 	transition: all 0.3s linear;
 	width: 100%;
-	text-align: center;
+    padding:18px;
+
 }
+
 .navbar-menu .menu li:first-child a
 {
 	border-top: 1px solid white;
@@ -963,12 +979,11 @@ footer h4 span{
   
 }
 
-
 .check:checked +  .baricon::after {
    transform: translateY(0);
    transform: rotate(45deg);
    transition: all 0.3s linear;
-  
+ 
 }
 
  .baricon{
@@ -976,11 +991,42 @@ footer h4 span{
 	display: block;
 }
 
+ .head-sec .text h3 {
+    font-size: 20px !important ;
+}
+.head-sec .text h1 {
+    font-size: 36px !important ;
+}
+.head-sec .text p {
+    font-size: 20px !important ;
+}
+.head-sec .text a {
+    font-size: 13px !important ;
+    padding: 10px 20px !important;
+    font-size: 16px !important ;
+}
+
+.contact .wrapper .row .right .input_group input[type="email"] {
+    margin-left:initial;
+}
+
 
 
  /* responsive media query */
 
-@media (max-width: 480px) {
+@media (max-width:575px) {
+
+.navbar-menu .menu{
+    width: 100%;
+    overflow: hidden;
+}
+.navbar-menu .menu li a{
+    padding-left: 50px;
+    overflow: hidden;
+}
+.navbar-menu .menu li {
+    overflow: hidden;
+}
   .typea {
     
     white-space: normal !important;
@@ -1001,31 +1047,6 @@ span.typed-cursor{
 }
 
 }
-
-
-@media  (max-width: 991px) {
-  
-  .head-sec .text h3 {
-    font-size: 20px !important ;
-}
-.head-sec .text h1 {
-    font-size: 36px !important ;
-}
-.head-sec .text p {
-    font-size: 20px !important ;
-}
-.head-sec .text a {
-    font-size: 13px !important ;
-    padding: 10px 20px !important;
-    font-size: 16px !important ;
-}
-
-
-
-
-}
-
-
 
 
 @media (max-width: 320px) {
@@ -1284,10 +1305,6 @@ footer h4 {
 }
 
 
-.team{
-	padding-bottom: 30px !important;
-}
-
 .contact .wrapper .row .right {
     flex-basis: 100%;
    padding-left: 0;
@@ -1423,9 +1440,6 @@ footer h4 {
 }
 
 
-.team{
-	padding-bottom: 30px !important;
-}
 
 .contact .wrapper .row .right {
     flex-basis: 100%;
@@ -1563,10 +1577,6 @@ footer h4 {
 }
 
 
-.team{
-	padding-bottom: 30px !important;
-}
-
 .contact .wrapper .row .right {
     flex-basis: 100%;
    padding-left: 0;
@@ -1682,10 +1692,6 @@ footer h4 {
 	display: none !important;
 }
 
-
-.team{
-	padding-bottom: 30px !important;
-}
 
 .contact .wrapper .row .right {
     flex-basis: 50%;}

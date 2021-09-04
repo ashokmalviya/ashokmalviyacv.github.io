@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web-service</title>
+	<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq
+6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+<!-- owl carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+	<header>	
+        <div class="top_head d-flex align-items-center ">
+        	<div class="container">	
+           <div class="row row_one  ">	
+             <div class="col-lg-6 left_coloum d-flex justify-content-start">
+                  <div class="text d-flex">
+                  	<p class="m-0 "><i class="fa fa-envelope-o pr-3" aria-hidden="true"></i>info@example.com</p>
+                  	<p class="m-0 pl-4"> <i class="fa fa-phone pr-3" aria-hidden="true"></i>+91 888876666</p>
+                  </div>
+             	</div>
+             <div class="col-lg-6 right_coloum d-flex justify-content-end align-items-center ">
+                   <div class="icons d-flex align-items-center justify-content-center  ">	
+                        <p><i class="fa fa-facebook " aria-hidden="true"></i></p>
+                        <p><i class="fa fa-instagram " aria-hidden="true"></i></p>
+                        <p>	<i class="fa fa-twitter " aria-hidden="true"></i></p>
+                   </div>
+             	</div>
+           </div>
+        	</div>
+        </div>
+
+        <div class="navigation">
+        	<div class="container">	
+          
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand  font-weight-bold" href="#">LOGO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+    <ul class="navbar-nav ">
+      <li class="nav-item active ">
+        <a class="nav-link font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+  
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Pages-1</a>
+          <a class="dropdown-item" href="#">Pages-2</a>
+          <a class="dropdown-item" href="#">Pages-3</a>
+          <a class="dropdown-item" href="#">Pages-4</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  font-weight-bold" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  font-weight-bold" href="#">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  font-weight-bold " href="#">Contact</a>
+      </li>
+    </ul>
+   
+  <div class="button_nav">
+      <button >Get A Quote</button>
+     	</div>
+  </div>
+</nav>
+
+        	</div>
+        </div>
+</header>
+
+
+<!-- hero section -->
+  <section class="hero-section">
+ 
+        <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 left_coloum">
+          <div class="text">
+            <p>We are the best</p>
+            <h1>We provides website solution for you</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia neque similique amet nostrum earum ea culpa saepe architecto, hic?</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="col-lg-6 right_coloum">
+          <figure >
+            <img src="images/hero-img.png" class="" alt="">
+          </figure>
+        </div>
+      </div>
+</div>
+
+</section>
+	
+
+ <!-- service -->
+
+  <section class="service">
+    <div class="container">
+      <div class="row row_one">
+
+        <div class="col-lg-4 col-md-6 coloum_one coloum">
+
+          <div class="text">
+            <p>Our service</p>
+            <h2>We are providing digital service</h2>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 coloum coloum_two">
+
+          <div class="icon_box">
+            <p><i class="fa fa-cogs" aria-hidden="true"></i></p>
+            <h3>Strategy & Service</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem id quo pariatur consectetur dicta esse cum fuga harum odio.</p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 coloum coloum_three">
+
+          <div class="icon_box">
+            <p><i class="fa fa-cogs" aria-hidden="true"></i></p>
+            <h3>Strategy & Service</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem id quo pariatur consectetur dicta esse cum fuga harum odio.</p>
+          </div>
+        </div>
+
+
+
+     
+       <div class="col-lg-4 col-md-6 coloum coloum_one">
+
+          <div class="icon_box">
+            <p><i class="fa fa-cogs" aria-hidden="true"></i></p>
+            <h3>Strategy & Service</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem id quo pariatur consectetur dicta esse cum fuga harum odio.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 coloum coloum_two">
+
+          <div class="icon_box">
+            <p><i class="fa fa-cogs" aria-hidden="true"></i></p>
+            <h3>Strategy & Service</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem id quo pariatur consectetur dicta esse cum fuga harum odio.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 coloum coloum_three">
+
+          <div class="icon_box">
+            <p><i class="fa fa-cogs" aria-hidden="true"></i></p>
+            <h3>Strategy & Service</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem id quo pariatur consectetur dicta esse cum fuga harum odio.</p>
+          </div>
+        </div>
+
+           </div>
+    </div>
+  </section>
+
+  <!-- aboutus section -->
+  <section class="aboutus">
+    <div class="row row_one">
+      <div class="col-lg-6 coloum_left coloum">
+        <div class="img_box">
+          <figure class="m-0">
+            <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="col-lg-6 coloum_right coloum">
+        <div class="text_box">
+          <p>abous us</p>
+          <h1>We Have Creative Team To Build Your Website Better</h1>
+          <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.</p>
+          <ul class="groups  m-0  list-unstyled">
+            <li>Suspendisse ullamcorper mollis orci in facilisis.</li>
+            <li>Suspendisse ullamcorper mollis orci in facilisis.</li>
+            <li>Suspendisse ullamcorper mollis orci in facilisis.</li>
+            <li>Suspendisse ullamcorper mollis orci in facilisis.</li>
+          </ul>
+          <div class="btn">
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- porfilo section start -->
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="head_text">
+        <p>Portfolio</p>
+        <h1>Take A Look At Our Latest Work</h1>
+      </div>
+     <div class="tabs">
+       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-webdesign-tab" data-toggle="pill" href="#pills-webdesign" role="tab" aria-controls="pills-webdesign" aria-selected="false">Web Designing</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-webdevelopment-tab" data-toggle="pill" href="#pills-webdevelopment" role="tab" aria-controls="pills-webdevelopment" aria-selected="false">Web Development</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab" aria-controls="pills-branding" aria-selected="false">Branding</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-mobile-tab" data-toggle="pill" href="#pills-mobile" role="tab" aria-controls="pills-mobile" aria-selected="false">Mobile App</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" id="pills-seo-tab" data-toggle="pill" href="#pills-seo" role="tab" aria-controls="pills-seo" aria-selected="false">SEO</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+  <!-- All-->
+
+  <div class="tab-pane  show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2VydmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNlcnZpY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- web designing-->
+
+  <div class="tab-pane " id="pills-webdesign" role="tabpanel" aria-labelledby="pills-webdesign-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYnNpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- webdevelopment-->
+
+  <div class="tab-pane " id="pills-webdevelopment" role="tabpanel" aria-labelledby="pills-webdevelopment-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1551295022-de5522c94e08?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1610387695018-3a90bf21c575?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ViZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1583195250383-ebf0d9341d70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2ViZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1551295022-de5522c94e08?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWdufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8ZGVzaWdufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+   <!-- Branding-->
+
+  <div class="tab-pane " id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJhbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YnJhbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1614735241165-6756e1df61ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyYW5kc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1590102426080-52ecff3affeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnJhbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJhbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1508849789987-4e5333c12b78?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnJhbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobie app -->
+
+  <div class="tab-pane " id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.pexels.com/photos/50614/pexels-photo-50614.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1546027658-7aa750153465?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vYmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1513908957990-b2790723edbf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1vYmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1546027658-7aa750153465?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vYmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- seo -->
+
+  <div class="tab-pane " id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab">
+    <div class="row row_one">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1600469984476-c713650f1b1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1588064643233-49210b27b82e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+
+     <div class="row row_two">
+      <div class="col-lg-4 coloum coloum_one">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1616469829718-0faf16324280?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2VvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_two">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNlb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+      <div class="col-lg-4 coloum coloum_three">
+         <figure>
+          <img src="https://images.unsplash.com/photo-1616499370260-485b3e5ed653?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNlb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+    </div>
+  </section>
+
+  <!-- service three -->
+<section class="service_three">
+  <div class="container">
+    <div class="row row_one">
+      <div class="col-lg-5 coloum_one coloum ">
+        <div class="left_side side ">
+          <p>our service</p>
+          <h2 class="font-weight-bold text-capitalize">behind the story of slack digital agency</h2>
+          <p >Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Hic officiis, nobis. Alias laboriosam, nisi. Mollitia adipisci eos voluptatum aspernatur eum.
+          Lorem ipsum dolor sit amet consectetur adipisicing, elit. Distinctio, molestias?</p>
+          <p >Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Hic officiis, nobis. Alias laboriosam, nisi. Mollitia adipisci eos voluptatum aspernatur eum.</p>
+          <p >Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Consectetur, molestiae.</p>
+
+        </div>
+      </div>
+      <div class="col-lg-7 coloum_two coloum">
+        <div class="right_side side">
+          <div class="box box_one">
+            <div class="group d-flex align-items-center ">
+            <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+            <div class="text">
+              <h4>Idea & Analysis Gathering</h4>
+              <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue mattis varius. Suspendisse rhoncus nisl.</p>
+            </div>
+            </div>
+          </div>
+          <div class="box box_two">
+            <div class="group d-flex align-items-center">
+            <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+            <div class="text">
+              <h4>Idea & Analysis Gathering</h4>
+              <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue mattis varius. Suspendisse rhoncus nisl.</p>
+            </div>
+            </div>
+          </div>
+          <div class="box box_three">
+            <div class="group d-flex align-items-center">
+            <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+            <div class="text">
+              <h4>Idea & Analysis Gathering</h4>
+              <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat augue mattis varius. Suspendisse rhoncus nisl.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pricing table -->
+<section class="pricing"> 
+<div class="container">
+ <div class="pricing_text">
+   <p>pricing table </p>
+   <h1 class="text-center">Choose A Plan That’s right For You</h1>
+   </div>
+<div class="row row_one">
+  <div class="col-lg-4 coloum_one coloum">
+    <div class="box box_one d-flex align-items-center flex-column py-5 rounded ">
+      <h2 class="text-capitalize text-center font-weight-bold ">basic plan</h2>
+      <p></p>
+      <p class="big">$49 <span class="text-capitalize">/ month</span></p>  
+      <p> Graphic Design</p>
+      <p> Web Design</p>
+      <p>UI/UX</p>
+      <p> Graphic Design</p>
+      <p> HTML/CSS</p>
+      <p> SEO Marketing</p>
+      <button class="btn  rounded-pill text-white text-uppercase">start now</button>
+    </div>
+  </div>
+  <div class="col-lg-4 coloum_two coloum">
+     <div class="box box_one d-flex align-items-center flex-column py-5 rounded ">
+      <h2 class="text-capitalize text-center font-weight-bold text-white">Standart Plan</h2>
+      <p></p>
+      <p class="big">$49 <span class="text-capitalize">/ month</span></p>  
+      <p> Graphic Design</p>
+      <p> Web Design</p>
+      <p>UI/UX</p>
+      <p> Graphic Design</p>
+      <p> HTML/CSS</p>
+      <p> SEO Marketing</p>
+      <button class="btn  rounded-pill text-white text-uppercase">start now</button>
+    </div>
+  </div>
+  <div class="col-lg-4 coloum_three coloum">
+     <div class="box box_one d-flex align-items-center flex-column py-5 rounded ">
+      <h2 class="text-capitalize text-center font-weight-bold ">Premium Plan</h2>
+      <p></p>
+      <p class="big">$49 <span class="text-capitalize">/ month</span></p>  
+      <p> Graphic Design</p>
+      <p> Web Design</p>
+      <p>UI/UX</p>
+      <p> Graphic Design</p>
+      <p> HTML/CSS</p>
+      <p> SEO Marketing</p>
+      <button class="btn  rounded-pill text-white text-uppercase">start now</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- testomonial -->
+<section class="testimonial">
+  <div class="container">
+    <div class="gruop_text d-flex flex-column align-items-center justify-content-center">
+      <p >testimonial</p>
+      <h2 class="font-weight-bold text-capitalize">See What Our Clients Say’s</h2>
+    </div>
+     <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="box box_one">
+        <h3 class="font-weight-bold text-center">Cak deling</h3>
+        <p class="text-center text-uppercase">ceo & founder</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia maiores totam neque autem nisi sunt fugit animi. Cum ea nobis fuga itaque quisquam tempore officiis! Quas facere, aliquid unde.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box box_one">
+        <h3 class="font-weight-bold text-center">Cak deling</h3>
+        <p class="text-center text-uppercase">ceo & founder</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia maiores totam neque autem nisi sunt fugit animi. Cum ea nobis fuga itaque quisquam tempore officiis! Quas facere, aliquid unde.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="box box_one">
+        <h3 class="font-weight-bold text-center">Cak deling</h3>
+        <p class="text-center text-uppercase">ceo & founder</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia maiores totam neque autem nisi sunt fugit animi. Cum ea nobis fuga itaque quisquam tempore officiis! Quas facere, aliquid unde.</p>
+      </div>
+    </div>
+  
+
+    </div>
+  </div>
+</section>
+
+<!-- blog -->
+
+<section class="blog my-5">
+  <div class="container">
+    <div class="group_text d-flex flex-column align-items-center justify-content-center mb-4">
+      <p class="text-center ">our blog</p>
+      <h2 class="text-center text-capitalize ">our latest blog</h2>
+    </div>
+    <div class="row row_one no-gutters">
+      <div class="col-lg-6 coloum coloum_one">
+        <div class="left_side side">
+          <figure>
+            <img src="https://images.pexels.com/photos/3411134/pexels-photo-3411134.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img-fluid rounded w-100">
+            <button class="btn rounded badge-dark font-weight-bold text-uppercase text-center ">25/march</button>
+          </figure>
+          <p class="text-uppercase font-weight-bold first">design // development </p>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet.</h3>
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, blanditiis ipsa, sapiente odio quia dolor perspiciatis dignissimos veritatis minima voluptatum, maxime maiores numquam.</p>
+          <button class="btn rounded font-weight-bold text-capitalize  border-0">Read more</button>
+        </div>
+      </div>
+      <div class="col-lg-6 coloum coloum_two">
+        <div class="left_side side">
+          <figure>
+            <img src="https://images.unsplash.com/flagged/photo-1556514767-5c270b96a005?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNlb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid rounded  w-100">
+            <button class="btn rounded bg-dark font-weight-bold text-uppercase text-center">25/march</button>
+          </figure>
+          <p class=" text-uppercase font-weight-bold">design // development </p>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, amet.</h3>
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id, blanditiis ipsa, sapiente odio quia dolor perspiciatis dignissimos veritatis minima voluptatum, maxime maiores numquam.</p>
+          <button class="btn rounded font-weight-bold text-capitalize  border-0">Read more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- newsletter -->
+\
+<section class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 coloum">
+        <div class="left_side ">
+          <h2>Subscribe To Our Newsletter For Latest Update</h2>
+         </div>
+      </div>
+
+      <div class="col-md-5 coloum">
+        <div class="right_side d-flex ">
+
+          <div class="input_group d-flex ">
+             <input type="mail" placeholder="Your Email address">
+          <button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+          </div>
+
+         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+  <div class="container">
+    <div class="row row_one">
+      <div class="col-lg-3 coloum coloum_one">
+        <div class="box_one box">
+          <h2 class="mb-4">LOGO</h2>
+          <div class="icon_group d-flex align-items-center">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="text">
+              <p>+ 91 98352345323</p>
+              <p>+ 91 98352345323</p>
+            </div>
+          </div>
+          <div class="icon_group d-flex align-items-center">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="text">
+              <p>info@example.com</p>
+              <p>info@example.com</p>
+            </div>
+          </div>
+          <div class="icon_group d-flex align-items-center">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <div class="text">
+              <p>Ahmdabad, Gujrat</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 coloum coloum_two d-flex ">
+        <div class="box box_two">
+          <h3 class="text-uppercase text-white font-weight-bold mb-4">our links</h3>
+            <ul class="list text-white text-capitalize list-unstyled m-0 p-0 font-weight-bold">
+              <li>Home</li>
+              <li>About us</li>
+              <li>Blogs</li>
+              <li>team</li>
+              <li>Service</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 coloum coloum_three d-flex ">
+        <div class="box box_three">
+          <h3 class="text-uppercase text-white font-weight-bold mb-4">our links</h3>
+            <ul class="list text-white text-capitalize list-unstyled m-0 p-0 font-weight-bold">
+              <li>Strategy & Research</li>
+              <li>Web Development</li>
+              <li>Web Solution</li>
+              <li>Digital Marketing</li>
+              <li>App Design</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 coloum coloum_four d-flex ">
+        <div class="box box_four">
+          <h3 class="text-uppercase text-white font-weight-bold mb-4">our links</h3>
+            <ul class="list text-white text-capitalize list-unstyled m-0 p-0 font-weight-bold">
+        
+              <li> FAQ</li>
+              <li>Portfolio</li>
+              <li>Privacy Policy</li>
+              <li>Terms & ConditionsSupport</li>
+              <li>Support</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+     </div>
+    <div class="copyright bg-dark py-1 d-flex align-items-center">
+      <div class="container d-flex justify-content-between align-items-center ">
+      <div class="left_side">
+        <h6 class="text-white m-0">Copyright © 2021 Companyname. All rights reserved.</h6>
+      </div>
+      <div class="right_side text-white d-flex align-items-center ">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+    </div>
+ </div>
+</section>
+ 
+
+ <script>
+  $(document).ready(function($) {
+    
+
+   $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+   $(window) .scroll(function(){
+  if ( $ (window) .scrollTop () >= 50 ) {
+    $(".navigation") .css("background-color", "white")
+    .css('box-shadow', '0 0 10px 4px rgb(31 66 135 / 10%)')
+     .css("width", "100%") .css("z-index", "999") .css('top', '0')
+     .css('left', '0');
+     $("header .top_head ") .css("display", "none");
+     // $(".navbar-menu .menu li a:hover") .css("color", "white");
+      $('.navbar-menu .menu li a') .mouseover(function() {
+    $(this) .css("color", "white")
+  });
+
+  } else {
+    $(".navigation") .css("background-color", "initial")
+     .css('top', 'initial')
+     .css('left', 'initial')
+      .css('box-shadow', 'initial')
+     $("header .top_head ") .css("display", "flex");
+  }
+});
+
+     });
+ </script>
+</body>
+</html>
