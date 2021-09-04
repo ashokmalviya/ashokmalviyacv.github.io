@@ -8,23 +8,16 @@
     font-family: 'PT Sans', sans-serif !important;
   }
 
-  html{
+  html, body{
   	scroll-behavior: smooth;
     overflow-x: hidden !important;
 
   }
 
-  
 
 body{
-	position: relative;
-    overflow-y: auto;
-    background-color: #dbe7ea !important;
+	
     font-family: 'PT Sans', sans-serif;
-    width: 100%;
-     overflow-x: hidden !important;
-   
-
 }
 
 .nav-resume{
@@ -77,13 +70,12 @@ header .wrapper h2{
 }
 header .wrapper h2 > a{    
     font-size: 16px;
-    color: blakc;
+    color:white;
     text-decoration: none;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    color: black;
+    width: 40px;
+    height: 40px;
+    background-color:#5095a9;
     display: flex;
     justify-content: center;
     align-items: center;
