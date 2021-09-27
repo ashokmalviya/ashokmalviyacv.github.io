@@ -23,6 +23,7 @@ body{
 .nav-resume{
     position: fixed !important;
    top: 0;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* Scroll bottome to top ------------------------------*/
@@ -226,7 +227,6 @@ section.resume {
    margin-top: 100px;
     /* border-top-left-radius: 15px;
     border-top-right-radius: 15px; */
-    background-color: white;
 }
 
 .head-section{
@@ -237,6 +237,7 @@ section.resume {
 	width: 100%;
 	background-position: center;
 	position: relative;
+    z-index: -1;
 	/* border-top-left-radius: 10px;
 	border-top-right-radius: 10px; */
 }
@@ -951,6 +952,8 @@ header .wrapper .social-icon {
     right: 0;
     opacity: 1;
     pointer-events:auto;
+    z-index: 999;
+    top:95px;
 }
 
 
@@ -1044,11 +1047,6 @@ section.resume .head-section  {
 .contact .wrapper .row .left-side textarea {
     width: 60%;
     height: 100px;
-}
-
-body {
-    
-    background-color:white !important	;
 }
 
 
