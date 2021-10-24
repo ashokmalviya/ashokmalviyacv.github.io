@@ -324,13 +324,10 @@ background: linear-gradient(90deg,#5095a9 0%, #128aab 80%);
     font-weight: 600;
     display: inline-block;
      transition: 0.4s linear !important ;
-   
+   margin-right: 10px;
+   transform: translateY(0px);
 }
 
-.head-section .text-box  a{   
-    margin-right: 10px;
-    
-}
 .head-section .text-box  a:nth-of-type(1){   
    background: white !important	;
    color: black;
@@ -339,8 +336,7 @@ background: linear-gradient(90deg,#5095a9 0%, #128aab 80%);
 
 .head-section .text-box  a:hover{ 
   transform: translateY(-4px);
-   display: inline-block;
-   transition: 0.4s linear !importa;
+   transition: 0.4s linear;
 
 	}
 .head-section .text-box  a:hover:nth-of-type(2){   
